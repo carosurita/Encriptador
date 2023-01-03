@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGE 1</title>
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <img src="recursos/Logo.png" alt="logo_Alura">
+        </h1>
+    </header>
+    <main>
+        <div class="contenedor_main">
+            <div class="texto_a_encriptar">
+                <h2 class="titulo">Encriptador de texto</h2>
+                <p class="subtitulo">Ingrese el texto que quiera encriptar</p>
+                <textarea  id="texto" name= "texto"  placeholder="Ingrese su texto aquí" required pattern="[a-z]+" ></textarea>
+                <div class="info_texto">
+                    <legend class="aclaracion">
+                        <img src="recursos/bi_exclamation-circle-fill.png" alt="!">
+                        Permite solo mínusculas y sin acentos
+                    </legend> 
+                </div>
+                <div class="botones">
+                    <button id="encript" class="boton_principal">Encriptar</button>
+                    <button id="desencript" class="boton_secundario">Desencriptar</button>
+                </div>
+            </div>
+            <div class="texto_encriptado">
+                <div class="sin_texto" >
+                    <div class="img_textoNoEncontrado">
+                        <img src="recursos/Muñeco.png" alt="img_textoNoEncontrado">
+                    </div>
+                    <div class="texto_noEncontrado">
+                        <h3 class="titulo2">Texto no encontrado</h2>
+                        <p class="subtitulo2">Ingrese el texto que quiera encriptar</p>
+                    </div>
+                </div>
+                <div id="salida"   >
+                    <h2 class="titulo">Salida</h2>
+                    <div class="text_area">
+                        <textarea class="cripto"></textarea>
+                    </div>
+                    <div class="texto_copiado">
+                        <p id="leyenda" style="display: hidden;">¡El texto ha sido copiado con éxito!</p>
+                        <button id="copy" class="boton_secundario">Copiar</button>
+                    </div>
+                </div>
+            </div>
+           
+           
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="links">
+
+            <ul>
+                <li class="link_items">
+                    <a class="item" href="https://www.linkedin.com/in/carolina-surijon/">
+                        <img src="recursos/linkedin.png" alt="linkedin"> Linkedin
+                    </a>
+                </li>
+                <li class="link_items">
+                    <a class="item" href="https://github.com/carosurita">
+                        <img src="recursos/github-logo-silhouette-in-a-square.png" alt="github"> Github
+                    </a>
+                </li>
+              
+            </ul>
+            
+            
+        </div>
+      
+
+        <p class="copyRight"> &copy;  Carolina Surijon- 2022 </p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@300&display=swap');
+
+/*estilo general*/
+*{
+    font-family: 'Lilita One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.contenedor_main{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+    gap: 66px;
+    
+}
+
+.logo{
+    margin:15px auto;
+}
+
+.texto_a_encriptar{
+    display: flex;
+    width: 60%;
+    height: 900px;
+    margin-left: 4%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom:15px;
+}
+
+.subtitulo{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#texto{
+    width: 90%;
+    height: 600px;
+    font-size: 1.5rem;
+    padding:5px 2px;
+
+}
+
+#texto::placeholder{
+    font-size: 1.5rem;
+    padding:5px 2px;
+}
+
+
+.aclaracion{
+    padding: 15px;
+}
+
+.boton_principal, .boton_secundario{
+    width: 328px;
+    height: 67px;
+    border-radius: 15px;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.boton_principal{
+    background: #0A3871;
+    color: #fff;
+    
+}
+
+.boton_secundario{
+    background: #D8DFE8;
+}
+
+
+.boton_principal:hover{
+    transform: scale(1.2);
+}
+
+.boton_secundario:hover{
+    transform: scale(1.2);
+}
+
+.texto_encriptado{
+    width: 40%;
+    height: 900px;
+    align-items: center;
+    background: #ccc;
+    border-radius: 20px;
+}
+
+
+.sin_texto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img_textoNoEncontrado{
+   margin: 150px ;
+}
+
+
+.titulo2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.subtitulo2{
+    font-size: 1rem;
+  
+}
+
+#salida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#salida h2 {
+    padding: 20px;
+}
+
+
+.cripto {
+    width: 90%;
+    height: 600px;
+    border: none;
+    background: #ccc;
+    margin: 15px auto;
+    font-size: 1.5rem;
+    padding:5px 2px;
+
+
+}
+
+#leyenda {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+
+.footer{
+    display:flex;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background: #ccc;
+}
+
+.link_items {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+
+.item{
+    text-decoration: none;
+    
+}
+
+
+@media screen and (max-width:760px) {
+
+    .contenedor_main {
+        display: flex;
+        flex-direction: column;
+        margin:22px;
+        align-items: center;
+    }
+
+    .logo{
+        
+        margin:15px auto;
+       
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo{
+        font-size: 1rem;
+    }
+
+    .texto_a_encriptar{ 
+        width:90%;
+        height: 600px;
+        margin:0;
+        font-size: 1rem;
+       
+    }
+
+    #texto{
+        width: 100%;
+        height: 400px;
+        font-size: 1rem;
+        padding:15px auto;
+        
+    }
+
+    #texto::placeholder{
+        font-size: 1rem;
+        padding:5px 2px;
+
+    }
+
+    .aclaracion{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .boton_principal, .boton_secundario{
+        width: 300px;
+        height: 67px;
+        border-radius: 10px;
+        margin: 10px;
+        font-size: 1rem;
+        
+    }
+
+    .boton_principal:hover{
+        transform: scale(1.1);
+    }
+    
+    .boton_secundario:hover{
+        transform: scale(1);
+    }
+    
+
+    .texto_encriptado{
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        background: #ccc;
+        border-radius: 20px;
+    }
+
+    .sin_texto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .img_textoNoEncontrado{
+       display: none;
+      
+    }
+    
+    
+    .titulo2{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 180px;
+    }
+    
+    .subtitulo2{
+        font-size: 1rem;
+
+      
+    }
+    
+    #salida{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #salida h2 {
+        padding: 20px;
+    }
+    
+    
+    .cripto {
+        width: 90%;
+        height: 200px;
+        border: none;
+        background: #ccc;
+        margin: 15px auto;
+        font-size: 1rem;
+        padding:2px 2px;
+    
+    
+    }
+    
+    #leyenda {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform:uppercase;
+    }
+
+    
+    
+}
+
+
+    
+    
+
+
+
+
+
